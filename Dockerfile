@@ -1,8 +1,10 @@
 FROM tomcat.8.0
 
+RUN echo "$PWD"
+
 COPY ./target/demo.war /usr/local/tomcat/webapps/
 
-RUN echo "$PWD"
+
 
 EXPOSE 8080
 
