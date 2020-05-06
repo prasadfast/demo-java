@@ -10,8 +10,8 @@ pipeline {
 		stage('Build') { 
             steps {
                 sh 'mvn clean package '
-		sh 'pwd' 
-		 sh 'ls ./target/*'
+		sh 'chmod 777 ./target/demo.war' 
+		 
             }
         }
 	    stage('docker') {
