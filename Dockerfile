@@ -2,7 +2,7 @@ FROM tomcat.8.0
 
 RUN echo "$PWD"
 
-COPY ./target/demo.war /usr/local/tomcat/webapps/
+ADD ./target/demo.war /usr/local/tomcat/webapps/
 
 
 
